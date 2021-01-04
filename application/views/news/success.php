@@ -1,0 +1,1 @@
+<h1>News added or updated!</h1>
