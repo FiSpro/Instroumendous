@@ -1,6 +1,6 @@
 <html>
         <head>
-                <title>CodeIgniter Tutorial</title>
+                <title>Learn to play an instrument</title>
 
 
 <link rel = "stylesheet" type = "text/css"

@@ -1,88 +1,135 @@
-#main{
-    width:960px;
-    margin:50px auto;
-    font-family:raleway;
+* {
+  box-sizing: border-box;
 }
 
-span{
-    color:red;
-}
-
-h2{
-    background-color: #FEFFED;
-    text-align:center;
-    border-radius: 10px 10px 0 0;
-    margin: -10px -40px;
-    padding: 30px;
-}
-
-#login{
-
-    width:300px;
-    float: left;
-    border-radius: 10px;
-    font-family:raleway;
-    border: 2px solid #ccc;
-    padding: 10px 40px 25px;
-    margin-top: 70px;
-}
-
-input[type=text],input[type=password], input[type=email]{
-    width:99.5%;
-    padding: 10px;
-    margin-top: 8px;
-    border: 1px solid #ccc;
-    padding-left: 5px;
-    font-size: 16px;
-    font-family:raleway;
-}
-
-input[type=submit]{
-    width: 100%;
-    background-color:#FFBC00;
-    color: white;
-    border: 2px solid #FFCB00;
-    padding: 10px;
-    font-size:20px;
-    cursor:pointer;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-#profile{
-    padding:50px;
-    border:1px dashed grey;
-    font-size:20px;
-    background-color:#DCE6F7;
-}
-
-#logout{
-    float:right;
-    padding:5px;
-    border:dashed 1px gray;
-    margin-top: -168px;
-}
-
-a{
-    text-decoration:none;
-    color: cornflowerblue;
-}
-
-i{
-    color: cornflowerblue;
-}
-
-.error_msg{
-    color:red;
-    font-size: 16px;
-}
-
-.message{
-    position: absolute;
-    font-weight: bold;
-    font-size: 28px;
-    color: #6495ED;
-    left: 262px;
-    width: 500px;
+/* index.html */
+.index {
     text-align: center;
+    font-family: Helvetica;
+    background-color: seagreen;
+}
+
+.indexSelect {
+    padding-top: 50px;
+    color: white;
+}
+
+.indexRow {
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    border: 5px solid black;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.indexRow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.indexColumn {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.indexColumn img {
+    width: 70%
+}
+
+.indexColumn img:hover {
+    transform: scale(1.1);
+    background: lightgreen;
+}
+
+/* piano.html */
+.piano {
+    text-align: center;
+    font-family: Helvetica;
+    background-color: ghostwhite;
+}
+
+.pianoHistory h1 {
+    padding: 10px;
+}
+
+.pianoHistory img {
+    width: 90%;
+}
+
+/* guitar */
+.guitar {
+    text-align: center;
+    font-family: Helvetica;
+    background-color: ghostwhite;
+}
+
+.guitarHistory h1 {
+    padding: 10px;
+}
+
+.guitarHistory img {
+    width: 40%;
+}
+
+/* violin */
+.violin {
+    text-align: center;
+    font-family: Helvetica;
+    background-color: ghostwhite;
+}
+
+.violinHistory h1 {
+    padding: 10px;
+}
+
+.violinHistory img {
+    width: 30%;
+}
+
+/* piano, guitar, violin */
+
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.nav {
+    background: black;
+    height: 50px;
+}
+
+.nav li {
+    float: left;
+    display: inline-block;
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 60px;
+}
+
+.nav li:hover {
+    color: white;
+    background: darkred;
+    transition: background .3s;
+}
+
+h1 {
+    color: seagreen;
+}
+
+a {
+    color: seagreen;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkred;
 }
