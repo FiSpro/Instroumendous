@@ -45,8 +45,12 @@
     background: lightgreen;
 }
 
+<<<<<<< HEAD
 
 /* piano */
+=======
+/* piano.html */
+>>>>>>> 210b99770f474ab1ad4aaccd4c92a0e211fc1c36
 .piano {
     text-align: center;
     font-family: Helvetica;
@@ -61,6 +65,7 @@
     width: 90%;
 }
 
+<<<<<<< HEAD
 .pianoType {
     text-align: center;
     font-family: Helvetica;
@@ -76,6 +81,8 @@
 }
 
 
+=======
+>>>>>>> 210b99770f474ab1ad4aaccd4c92a0e211fc1c36
 /* guitar */
 .guitar {
     text-align: center;
@@ -91,7 +98,10 @@
     width: 40%;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 210b99770f474ab1ad4aaccd4c92a0e211fc1c36
 /* violin */
 .violin {
     text-align: center;
@@ -124,7 +134,10 @@ html, body, ul, li {
 }
 
 .nav li {
+<<<<<<< HEAD
     font-weight: bolder;
+=======
+>>>>>>> 210b99770f474ab1ad4aaccd4c92a0e211fc1c36
     float: left;
     display: inline-block;
     list-style: none;
@@ -139,10 +152,13 @@ html, body, ul, li {
     transition: background .3s;
 }
 
+<<<<<<< HEAD
 #logout {
     float: right;
 }
 
+=======
+>>>>>>> 210b99770f474ab1ad4aaccd4c92a0e211fc1c36
 h1 {
     color: seagreen;
 }
@@ -154,6 +170,7 @@ a {
 
 a:hover {
     color: darkred;
+<<<<<<< HEAD
 }
 
 .video {
@@ -170,4 +187,6 @@ a:hover {
 
 .video h3 a:hover {
     color: darkred;
+=======
+>>>>>>> 210b99770f474ab1ad4aaccd4c92a0e211fc1c36
 }
