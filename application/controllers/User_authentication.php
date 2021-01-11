@@ -44,7 +44,6 @@ public function signup() {
     if ($this->form_validation->run() == FALSE) {
         $this->load->view('templates/header');
         $this->load->view('user_authentication/registration_form');
-        $this->load->view('templates/footer');
     } else {
         $data = array(
             'username' => $this->input->post('username'),
@@ -62,23 +61,6 @@ public function signup() {
             $this->load->view('templates/footer');
         }
     }
-}
-
-public function admin(){
-
-        if(isset($this->session->userdata['logged_in'])){
-            $data['username'] = $this->session->userdata['logged_in']['username'];
-            $data['email'] = $this->session->userdata['logged_in']['email'];
-
-            $this->load->view('templates/header');
-            $this->load->view('user_authentication/admin_page', $data);
-            $this->load->view('templates/footer');
-        }else{
-            $data['message_display'] = 'Signin to view admin page!';
-            $this->load->view('templates/header');
-            $this->load->view('user_authentication/login_form', $data);
-            $this->load->view('templates/footer');
-        }
 }
 
 // Check for user login process
@@ -104,7 +86,7 @@ public function signin() {
             $data = array('error_message' => 'Signin OK');
             $this->session->set_userdata('logged_in', $session_data);
             //$_SESSION["logged in"]["username"] = ...
-            $this->load->view('templates/header',$data);
+            $this->load->view('templates/header');
             $this->load->view('user_authentication/login_form',$data);
             $this->load->view('templates/footer');
         }
