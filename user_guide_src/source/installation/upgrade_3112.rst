@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ###############################
 Upgrading from 3.1.11 to 3.1.12
 ###############################
@@ -24,3 +25,31 @@ Step 3: Replace config/mimes.php
 
 This config file has received some updates. Please copy it to
 *application/config/mimes.php*.
+=======
+###############################
+Upgrading from 3.1.11 to 3.1.12
+###############################
+
+Before performing an update you should take your site offline by
+replacing the index.php file with a static one.
+
+Step 1: Update your CodeIgniter files
+=====================================
+
+Replace all files and directories in your *system/* directory.
+
+.. note:: If you have any custom developed files in these directories,
+	please make copies of them first.
+
+Step 2: Replace config/user_agents.php
+================================
+
+This config file has received some updates. Please copy it to
+*application/config/user_agents.php*.
+
+Step 3: Replace config/mimes.php
+================================
+
+This config file has received some updates. Please copy it to
+*application/config/mimes.php*.
+>>>>>>> b3f1f4d90d1eabdebbe8975d147371d3590c4858

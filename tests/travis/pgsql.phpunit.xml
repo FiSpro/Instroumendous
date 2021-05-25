@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 
 <phpunit 
@@ -22,4 +23,30 @@
             <directory suffix=".php">../../system</directory>
         </whitelist>
 	</filter>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit 
+	bootstrap="../Bootstrap.php"
+	colors="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	stopOnError="false"
+	stopOnFailure="false"
+	stopOnIncomplete="false"
+	stopOnSkipped="false">
+	<php>
+        <const name="DB_DRIVER" value="pgsql"/>
+    </php>
+	<testsuites>
+		<testsuite name="CodeIgniter Core Test Suite">
+			<directory suffix="test.php">../codeigniter</directory>
+		</testsuite>
+	</testsuites>
+	<filter>
+        <whitelist addUncoveredFilesFromWhitelist="false">
+            <directory suffix=".php">../../system</directory>
+        </whitelist>
+	</filter>
+>>>>>>> b3f1f4d90d1eabdebbe8975d147371d3590c4858
 </phpunit>

@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+/* index.html */
+.index {
+    text-align: center;
+    font-family: Helvetica;
+    background-color: seagreen;
+}
+
+.indexSelect {
+    padding-top: 50px;
+    color: white;
+}
+
+.indexRow {
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    border: 5px solid black;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.indexRow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.indexColumn {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.indexColumn img {
+    width: 70%
+}
+
+.indexColumn img:hover {
+    transform: scale(1.1);
+    background: lightgreen;
+}
+
+
+/* piano */
+.piano {
+    text-align: center;
+    font-family: Helvetica;
+    background-color: ghostwhite;
+}
+
+.pianoHistory h1 {
+    padding: 10px;
+}
+
+.pianoHistory img {
+    width: 90%;
+}
+
+.pianoType {
+    text-align: center;
+    font-family: Helvetica;
+    background-color: darkseagreen;
+}
+
+.pType h1 {
+    color: black;
+}
+
+.pType h4 a {
+    color: darkred;
+}
+
+
+/* guitar */
+.guitar {
+    text-align: center;
+    font-family: Helvetica;
+    background-color: ghostwhite;
+}
+
+.guitarHistory h1 {
+    padding: 10px;
+}
+
+.guitarHistory img {
+    width: 40%;
+}
+
+.guitarType {
+    text-align: center;
+    font-family: Helvetica;
+    background-color: darkslategray;
+}
+
+.gType h1 {
+    color: black;
+}
+
+.gType h1 a {
+    color: darkred;
+}
+
+.gType h1 a:hover {
+    color: seagreen;
+}
+
+.gType h3 {
+    color: white;
+}
+
+.gType h4 a {
+    color: darkred;
+}
+
+/* violin */
+.violin {
+    text-align: center;
+    font-family: Helvetica;
+    background-color: ghostwhite;
+}
+
+.violinHistory h1 {
+    padding: 10px;
+}
+
+.violinHistory img {
+    width: 30%;
+}
+
+.violinType {
+    text-align: center;
+    font-family: Helvetica;
+    background-color: darkcyan;
+}
+
+.vType h1 {
+    color: black;
+}
+
+.vType h1 a {
+    color: darkred;
+}
+
+.vType h1 a:hover {
+    color: white;
+}
+
+.vType h3 {
+    color: white;
+}
+
+.vType h4 a {
+    color: darkred;
+}
+
+/* piano, guitar, violin */
+
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.nav {
+    background: black;
+    height: 50px;
+}
+
+.nav li {
+    font-weight: bolder;
+    float: left;
+    display: inline-block;
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 60px;
+}
+
+.nav li:hover {
+    color: white;
+    background: darkred;
+    transition: background .3s;
+}
+
+#logout {
+    float: right;
+}
+
+h1 {
+    color: seagreen;
+}
+
+a {
+    color: seagreen;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkred;
+}
+
+.video {
+    background: seagreen;
+    margin: auto;
+    width: 65%;
+    border: 5px solid black;
+    border-radius: 50px;
+}
+
+.video h3 a {
+    color: ghostwhite;
+}
+
+.video h3 a:hover {
+    color: darkred;
+}

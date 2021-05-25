@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 
 <phpunit
@@ -22,3 +23,29 @@
 		</whitelist>
 	</filter>
 </phpunit>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit
+	bootstrap="./Bootstrap.php"
+	colors="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	stopOnError="false"
+	stopOnFailure="false"
+	stopOnIncomplete="false"
+	stopOnSkipped="false">
+	<testsuites>
+		<testsuite name="CodeIgniter Core Test Suite">
+			<directory suffix="test.php">./codeigniter/core</directory>
+			<directory suffix="test.php">./codeigniter/helpers</directory>
+			<directory suffix="test.php">./codeigniter/libraries</directory>
+		</testsuite>
+	</testsuites>
+	<filter>
+		<whitelist>
+			<directory suffix=".php">../system/</directory>
+		</whitelist>
+	</filter>
+</phpunit>
+>>>>>>> b3f1f4d90d1eabdebbe8975d147371d3590c4858

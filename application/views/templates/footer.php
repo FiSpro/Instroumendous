@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <footer class="page-footer">
 	<div class="container">
 		<div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
@@ -13,3 +14,8 @@
 </body>
 
 </html>
+=======
+               
+        </body>
+</html>
+>>>>>>> b3f1f4d90d1eabdebbe8975d147371d3590c4858
